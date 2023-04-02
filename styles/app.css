@@ -2,40 +2,31 @@ body {
   font: 18px/1.5 sans-serif;
 }
 
+.pad-30 {
+  padding: 30px;
+}
+
+.color-w {
+  color: white;
+}
+
 aside {
-  height: 200px;
+  height: 300px;
   width: 100px;
   padding: 20px 10px;
   box-sizing: border-box;
   
-  background: #000;
+  background: #3F51B5;
   color: #fff;
   
   float: left;
-  opacity: 0.4
 }
 
 main {
-  padding: 30px;
-  background: #ccc;
+  background: #2196F3;
+  height: 100%;
 }
 
-
-p {
-  width: 300px;
-}
-
-p span {
-  float: left;
-  
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  margin: 5px 5px 0 0;
-  box-sizing: border-box;
-  
-  background: #000;
-  color: #FFF;
-  
-  text-align: center;
+footer {
+  background: #9C27B0;
 }
