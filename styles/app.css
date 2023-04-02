@@ -81,3 +81,40 @@
     font-size: 1.5em;
   }
   
+  :root {
+    --modal-height: 100px;
+    --modal-width: 100px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fade {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal {
+    height: var(--modal-height);
+    width: var(--modal-width);
+    padding: 20px;
+    
+    position: absolute;
+    background: #FFFFFF;
+    
+    box-sizing: border-box;
+    
+    font-weight: bold;
+  }
+  
+  .modal-center {
+    left: calc(50% - var(--modal-width) / 2);
+    top: calc(50% - var(--modal-height) / 2);
+  }
