@@ -10,9 +10,13 @@ body {
   color: white;
 }
 
+.clear {
+  clear: both;
+}
+
 aside {
   height: 300px;
-  width: 100px;
+  width: 30%;
   padding: 20px 10px;
   box-sizing: border-box;
   
@@ -24,7 +28,11 @@ aside {
 
 main {
   background: #2196F3;
-  height: 100%;
+  width: 70%;
+  height: 300px;
+  box-sizing: border-box;
+  
+  float: left;
 }
 
 footer {
