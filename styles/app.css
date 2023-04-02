@@ -1,26 +1,30 @@
+:root {
+  --square-size: 200px;
+}
+
 .block {
-  width: 200px;
-  height: 200px;
   padding: 30px;
   box-sizing: border-box;
   
   position: absolute;
   top: 0;
   left: 0;
-  
-  color: #FFF;
-  font-size: 20px;
-  text-align: center;
 }
 
 .block-one {
-  background: #b39ddb;
+  width: var(--square-size);
+  height: var(--square-size);
+  background: #4527a0;
 }
 
 .block-two {
-  background: #9fa8da;
+  width: calc(var(--square-size) / 1.5);
+  height: calc(var(--square-size) / 1.5);
+  background: #3f51b5;
 }
 
 .block-three {
-  background: #90caf9;
+  width: calc(var(--square-size) / 3);
+  height: calc(var(--square-size) / 3);
+  background: #1565c0;
 }
