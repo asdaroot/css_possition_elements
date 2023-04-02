@@ -1,63 +1,54 @@
-:root {
-  --red: #f44336;
-  --green: #4caf50;
-  --blue: #2196f3;
-  --side: 200px;
-}
-
-body {
-  width: 600px;
-  height: 400px;
-  margin: 0;
-}
-
-/* BEGIN (write your solution here) */
-.square-red {
-  position: absolute;
-  width: var(--side);
-  height: var(--side);
-  background: var(--red);
-}
-
-.square-green {
-  position: absolute;
-  width: var(--side);
-  height: var(--side);
-  background: var(--green);
-  top:  var(--side);
-  left:  var(--side);
-}
-
-.square-blue {
-  position: absolute;
-  width: var(--side);
-  height: var(--side);
-  background: var(--blue);
-  left:  calc(var(--side)*2);  
-}
-/* END */
-
-.news {
+.books-card {
+  /* BEGIN (write your solution here) */
   position: relative;
-
-  padding: 30px;
+  
+  /* END */
   box-sizing: border-box;
-  
-  background: #673ab7;
-  color: #FFF;
-}
+  width: 500px;
+  height: 300px;
+  padding: 50px;
 
-.news .close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  
-  background: #F44336;
-  padding: 10px;
-  
+  background: #2980b9;
+  background: linear-gradient(to right, #fff, #6dd5fa, #2980b9);
+
   cursor: pointer;
 }
 
-.news h2 {
-  margin-top: 0;
+.book-name {
+  width: 50%;
+
+  color: #00bcd4;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.book-author {
+  color: #03a9f4;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.book-description {
+  /* BEGIN (write your solution here) */
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  
+  /* END */
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px 30px;
+
+  color: #fff;
+
+  background: #03a9f4;
+
+  opacity: 0;
+
+  transition: 1s;
+}
+
+.books-card:hover > .book-description {
+  opacity: 1;
 }
