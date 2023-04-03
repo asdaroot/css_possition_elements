@@ -1,34 +1,31 @@
-:root {
-  --square-size: 200px;
-}
-
-.block {
-  padding: 30px;
-  box-sizing: border-box;
+.circle {
+  /* BEGIN (write your solution here) */
+   opacity: 0.5; 
+   position: absolute;
+   top: 0;
+   left: 0;
   
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* END */
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
 }
 
-.block-one {
-  width: var(--square-size);
-  height: var(--square-size);
-  background: #4527a0;
-}
-
-.block-two {
-  width: calc(var(--square-size) / 1.5);
-  height: calc(var(--square-size) / 1.5);
-  background: #3f51b5;
-  
-  z-index: 2;
-}
-
-.block-three {
-  width: calc(var(--square-size) / 3);
-  height: calc(var(--square-size) / 3);
-  background: #1565c0;
-  
+.circle-blue {
+  /* BEGIN (write your solution here) */
+  background: blue; 
   z-index: 1;
+  
+  /* END */
+}
+
+.circle-red {
+  /* BEGIN (write your solution here) */
+  background: red; 
+  z-index: 2;
+  
+  
+  /* END */
 }
